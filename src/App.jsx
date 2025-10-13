@@ -1,7 +1,8 @@
 const App = () => {
   return (
     <div>
-      <h1 className="bg-blue-500">Weather App</h1>
+      <h1 className="text-[var(--color-Neutral-200)]">Weather App</h1>
+
     </div>
   );
 };

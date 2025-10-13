@@ -1,7 +1,157 @@
 @import "tailwindcss";
 
+/* ------------------------------------------------------------
+   🎨 Theme tokens (Tailwind v4 @theme)
+   ------------------------------------------------------------*/
+@theme {
+  /* Colors */
+  --color-Neutral-900: #02012C;
+  --color-Neutral-800: #262540;
+  --color-Neutral-700: #302F4A;
+  --color-Neutral-600: #3C3B5E;
+  --color-Neutral-300: #ACACB7;
+  --color-Neutral-200: #D4D3D9;
+  --color-Neutral-0: #FFFFFF;
+  --color-Orange-500: #FF820A;
+  --color-Blue-700: #2B1B9C;
+  --color-Blue-500: #4658D9;
 
 
-body {
-    @apply bg-purple-900;
+  /* Typography */
+
+  --font-sans: "DM Sans", sans-serif;
+  --font-heading: "Bricolage Grotesque", sans-serif;
+
+
+}
+
+/* ------------------------------------------------------------
+   🔠 Font imports
+   ------------------------------------------------------------*/
+/* DM Sans */
+
+@font-face {
+  font-family: "DM Sans";
+  src: url("./assets/fonts/DMSans-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: "DM Sans";
+  src: url("./assets/fonts/DMSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  src: url("./assets/fonts/DMSans-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  src: url("./assets/fonts/DMSans-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  src: url("./assets/fonts/DMSans-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Bricolage Grotesque (headings) */
+@font-face {
+  font-family: "Bricolage Grotesque";
+  src: url("./assets/fonts/BricolageGrotesque-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ------------------------------------------------------------
+   🧱 Text Presets (Tailwind v4 @utility)
+   ------------------------------------------------------------*/
+@utility text-preset-1 {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-style: italic;
+  line-height: 100%;
+  letter-spacing: -2px;
+  font-size: 96px;
+}
+
+@utility text-preset-2 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: 0;
+  font-size: 52px;
+}
+
+@utility text-preset-3 {
+  font-family: var(--font-sans);
+  font-weight: 300;
+  line-height: 100%;
+  letter-spacing: 0;
+  font-size: 32px;
+}
+
+@utility text-preset-4 {
+  font-family: var(--font-sans);
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: 0;
+  font-size: 28px;
+}
+
+@utility text-preset-5 {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: 0;
+  font-size: 20px;
+}
+
+@utility text-preset-5-medium {
+  font-family: var(--font-sans);
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: 0;
+  font-size: 20px;
+}
+
+@utility text-preset-6 {
+  font-family: var(--font-sans);
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: 0;
+  font-size: 18px;
+}
+
+@utility text-preset-7 {
+  font-family: var(--font-sans);
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: 0;
+  font-size: 16px;
+}
+
+@utility text-preset-8 {
+  font-family: var(--font-sans);
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: 0;
+  font-size: 14px;
 }
