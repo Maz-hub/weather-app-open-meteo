@@ -1,5 +1,6 @@
 @import "tailwindcss";
 
+
 /* ------------------------------------------------------------
    🎨 Theme tokens (Tailwind v4 @theme)
    ------------------------------------------------------------*/
@@ -24,6 +25,12 @@
 
 
 }
+
+body {
+  background: var(--color-Neutral-900);
+}
+
+
 
 /* ------------------------------------------------------------
    🔠 Font imports
@@ -71,14 +78,7 @@
   font-display: swap;
 }
 
-/* Bricolage Grotesque (headings) */
-@font-face {
-  font-family: "Bricolage Grotesque";
-  src: url("./assets/fonts/BricolageGrotesque-Bold.ttf") format("truetype");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
+
 
 /* ------------------------------------------------------------
    🧱 Text Presets (Tailwind v4 @utility)
@@ -98,6 +98,9 @@
   line-height: 120%;
   letter-spacing: 0;
   font-size: 52px;
+  font-optical-sizing: none;
+
+
 }
 
 @utility text-preset-3 {
