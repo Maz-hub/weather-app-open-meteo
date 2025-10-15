@@ -23,7 +23,6 @@
   --font-sans: "DM Sans", sans-serif;
   --font-heading: "Bricolage Grotesque", sans-serif;
 
-
 }
 
 body {
@@ -157,4 +156,27 @@ body {
   line-height: 120%;
   letter-spacing: 0;
   font-size: 14px;
+}
+
+/* ------------------------------------------------------------
+   🧱 Images Presets (Tailwind v4 @utility)
+   ------------------------------------------------------------*/
+
+/* In your index.css or component-specific CSS */
+/* In your index.css or component-specific CSS */
+.weather-bg {
+  background-image: url("./assets/images/bg-today-small.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 343px;
+  height: 286px;
+  margin: 0 auto; /* Center the background */
+  overflow: hidden; /* Prevent content from spilling outside */
+}
+
+@media (min-width: 1024px) {
+  .weather-bg {
+    background-image: url("./assets/images/bg-today-large.svg");
+  }
 }
