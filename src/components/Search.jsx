@@ -2,7 +2,7 @@ import SearchIcon from "../assets/images/icon-search.svg";
 
 const Search = () => {
   return (
-    <section className="flex flex-col">
+    <section className="flex flex-col lg:w-[656px] lg:mx-auto">
       <form role="search" className="flex flex-col md:flex-row gap-3 w-full">
         <div className="flex items-center py-4 px-6 rounded-xl bg-[var(--color-Neutral-800)] w-full md:flex-1">
           <img src={SearchIcon} alt="" aria-hidden="true" className="mr-3" />
