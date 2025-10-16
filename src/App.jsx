@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import HeaderSearch from "./components/HeaderSearch";
 import Search from "./components/Search";
 import WeatherInfo from "./components/WeatherInfo";
+import WeatherDetails from "./components/WeatherDetails";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
         </div>
         <Search />
         <WeatherInfo />
+        <WeatherDetails />
       </section>
     </>
   );
