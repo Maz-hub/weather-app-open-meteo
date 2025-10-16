@@ -3,6 +3,7 @@ import HeaderSearch from "./components/HeaderSearch";
 import Search from "./components/Search";
 import WeatherInfo from "./components/WeatherInfo";
 import WeatherDetails from "./components/WeatherDetails";
+import DailyForecast from "./components/DailyForecast";
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
         <Search />
         <WeatherInfo />
         <WeatherDetails />
+        <DailyForecast />
       </section>
     </>
   );
