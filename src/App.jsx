@@ -4,6 +4,7 @@ import Search from "./components/Search";
 import WeatherInfo from "./components/WeatherInfo";
 import WeatherDetails from "./components/WeatherDetails";
 import DailyForecast from "./components/DailyForecast";
+import HourlyForecast from "./components/HourlyForecast";
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
         <WeatherInfo />
         <WeatherDetails />
         <DailyForecast />
+        <HourlyForecast />
       </section>
     </>
   );
